@@ -1,0 +1,270 @@
+.sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0px;
+      left: 0;
+      background-color:FFFFFF;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+    
+    .sidenav a {
+      padding: 20px 20px 20px 52px;
+      text-decoration: none;
+      font-size: 30px;
+      color:black;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    .ul1 {
+      list-style: none;
+    }
+    
+    .ul1 .li::before {
+      content: "\2022";
+      color: black;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+    
+    ul, #myUL {
+      list-style-type: none;
+    }
+    
+    #myUL {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .caret {
+      cursor: pointer;
+      -webkit-user-select: none; /* Safari 3.1+ */
+      -moz-user-select: none; /* Firefox 2+ */
+      -ms-user-select: none; /* IE 10+ */
+      user-select: none;
+    }
+    
+    .caret::before {
+      content: "\2039";
+      color: black;
+      display: inline-block;
+      margin-left: 100px;
+    }
+    
+    .caret-down::before {
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Safari */
+      transform: rotate(90deg);  
+      
+    }
+    
+    .nested {
+      display: none;
+    }
+    
+    .active {
+      display: block;
+    }
+    .top {
+      border-top-style: solid;
+      border-top-width: thin;
+      color:rgb(254, 233, 232) ;
+    }
+    .bottom {
+      border-bottom-style: solid;
+      border-bottom-width: thin;
+      color:rgb(254, 233, 232) ;
+
+    }
+    
+    .bor{
+      border-style: solid;
+      border-top-width: thin;
+      color:rgb(254, 233, 232) ;
+
+    }
+    .pic{
+      background-image:linear-gradient(180deg, transparent,rgb(5,5,5,.4)) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0px;
+      width: 100%;
+      height: 80%;
+      padding: 130px;
+      position: relative;
+      background-position: center;
+}
+.middle {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 2%;
+      left: 92%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .pic:hover .middle {
+      opacity: 1;
+
+    }
+    .text {
+      background-color: FEE9E8;
+      color: black;
+      font-size: 15px;
+      padding: 9px 8px;
+      border-radius: 100%;
+      font-family: monospace;
+    }
+    .sold{
+      background-color:FEE9E8 ;
+      padding: 1px 15px;
+      font-size: 17px;
+      font-family:Bio Rhyme,serif;
+      position: absolute;
+
+    }
+    .pic:hover .sold {
+      display: none;
+      
+    }
+    .head{
+      background-image: url('https://ritzyscarves.com/cdn/shop/collections/image_1728x.jpg?v=1694584895'),linear-gradient(180deg, transparent,rgb(5,5,5,.4)) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0px;
+      width: 100%;
+      height: 80%;
+      padding: 180px;
+      position: relative;
+      background-position: center;
+    }
+    .head1{
+      background-image: url('https://ritzyscarves.com/cdn/shop/files/IMG_7268_1296x.jpg?v=1693667297'),linear-gradient(180deg, transparent,rgb(5,5,5,.4)) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0px;
+      width: 100%;
+      height: 80%;
+      padding: 180px;
+      position: relative;
+      background-position: center;
+    }
+    .bottomright {
+      position: absolute;
+      font-size: 18px;
+    }
+    .txtimg{
+      font-size: 25px;
+      color: FEE9E8;
+      position: relative;
+      content: '\2190';
+    }
+    .txtimg::before {
+      content: '';
+      color: #FEE9E8;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color:#FEE9E8;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+    
+    }
+      .txtimg:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+        color: #FEE9E8;
+        background-color:#FEE9E8;
+        animation-name: bounce;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+    form {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    .value-button {
+      display: inline-block;
+      border: 1px solid #ddd;
+      margin: 0px;
+      width: 40px;
+      height: 20px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 11px 0;
+      background: #eee;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    .value-button:hover {
+      cursor: pointer;
+    }
+    
+    form #decrease {
+      margin-right: -4px;
+      border-radius: 8px 0 0 8px;
+    }
+    
+    form #increase {
+      margin-left: -4px;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    form #input-wrap {
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    input#number {
+      text-align: center;
+      border: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin: 0px;
+      width: 40px;
+      height: 40px;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }

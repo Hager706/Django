@@ -1,0 +1,162 @@
+{% load static %}
+
+<html>
+      <head>
+            <title>Bootstrap Example</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="{% static 'style.css' %}">
+            <link rel="stylesheet" href="{% static 'home/tmblt copy.css' %}">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      
+      </head>
+      <body style="font-family:Georgia, 'Times New Roman', Times, serif;">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://127.0.0.1:8000/" style="margin-top: 100px;">Home</a>
+        <button class="dropdown-btn"> Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="http://127.0.0.1:8000/ritzychifon">Chiffon</a>
+            <a href="http://127.0.0.1:8000/ritzywoven">Woven</a>
+            <a href="http://127.0.0.1:8000/ritzylycra">Lycra</a>
+            <a href="http://127.0.0.1:8000/ritzywoven">Linen</a>
+          </div>  
+          <a href="http://127.0.0.1:8000/ourstory">Our story</a>
+          <a href="http://127.0.0.1:8000/contact">Reach out</a>
+          <a href="http://127.0.0.1:8000/sale">Sale</a>
+      </div>
+      
+      <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+            </script>
+            
+            <script>
+                  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                  var dropdown = document.getElementsByClassName("dropdown-btn");
+                  var i;
+                  
+                  for (i = 0; i < dropdown.length; i++) {
+                    dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                      } else {
+                        dropdownContent.style.display = "block";
+                      }
+                    });}</script>
+<div class="row " style="margin-top: 10px;">
+      <div class="col-sm-5 ">
+      <span style="font-size:40px;cursor:pointer " onclick="openNav()">&#9776; </span>
+      </div>
+<div class="col-sm-4" >
+<img src="https://ritzyscarves.com/cdn/shop/files/ritzy-logo-transparent_x50@2x.png?v=1693776106" width="25%" style="margin-top: 30px;">
+</div>
+<div class="col-sm-3">
+      <img src="https://i.suar.me/ZPP7J/m" width="25px" style="margin-top: 30px;margin-left: 170px;" >
+      <img src="https://i.suar.me/zaaj6/m" width="25px" style="margin-top: 30px;margin-left: 10px;">
+</div>
+</div><hr>
+<div class="container">
+
+<div class="container">
+      Home / Our story
+      <h1 style="text-align: center;">Our story</h1>
+      <p>Welcome to Ritzy, your gateway to the timeless allure of scarves. We are delighted to introduce you to a world of exquisite craftsmanship, rich history, and unparalleled style.</p>
+<p><b>Our Story</b></p>
+<p>
+      At Ritzy, we have woven our passion for scarves into every thread of our brand. Our journey began with a simple yet profound inspiration: the captivating beauty of Egypt. Nestled along the banks of the Nile River, Egypt has been a cradle of culture and artistry for millennia. It is in this enchanting land that we found the essence of elegance, a source of inspiration that we bring to you through our scarves.
+</p>
+<p><b>The Essence of Egyptian Elegance</b></p>
+<p>Egyptian scarves are more than just accessories; they are a symbol of timeless elegance. We believe that true beauty lies in the details, and that's why we pay attention to every aspect of our scarves, from the choice of fabrics to the intricate designs. Our scarves are a blend of heritage and contemporary fashion, making them the perfect addition to any outfit, whether casual or formal.</p>
+</div>
+      <script>
+            function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                  document.numbertext.style.backgroundColor = "rgba(0,0,0,0.4)";
+                  document.head.style.backgroundColor = "rgba(0,0,0,0.4)";
+            
+            
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                  document.numbertext.style.backgroundColor = "white";
+                  document.head.style.backgroundColor = "white";
+                  }
+                  </script></div>
+                   <div class="container-fluid"
+                   style="background-color: FEE9E8; padding: 50px;font-size: 15px;font-family:Georgia, 'Times New Roman', Times, serif;">
+                   <div class="row">
+                         <div class="col-sm-3">
+                               <p>
+                                     <img src="https://ritzyscarves.com/cdn/shop/files/ritzy-logo-transparent_x50@2x.png?v=1693776106"
+                                           width="150px">
+                               </p>
+                               <p>
+                                     <img src="https://i.suar.me/edd7P/m" width="30px">
+                                     <img src="https://i.suar.me/PXYZQ/m" width="30px">
+                               </p>
+                         </div>
+                         <div class="col-sm-3">
+                               <h6> MAIN MENU</h6>
+                               <p> Home</p>
+                               <p> All Product</p>
+                               <p> Our story</p>
+                               <p> Reach out</p>
+                               <p> Sale</p>
+                         </div>
+                         <div class="col-sm-3">
+                               <h6> OUR POLICES</h6>
+                               <p> Refunds & Exchanges</p>
+                               <p> Shipping Policy</p>
+                               <p> Privacy Policy</p>
+                               <p> Terms of Service</p>
+                               <p>Search</p>
+                               <p>Contact Information</p>
+                         </div>
+                         <div class="col-sm-3">
+                               <h6> SIGN UP!</h6>
+                               <p> Subscribe to get special offers,</p>
+                               <p> free giveaways, and once-in-a-</p>
+                               <div class="w3-panel w3-border w3-border-black">
+                                    <h6> <a href="http://127.0.0.1:8000/contact"><img src="https://i.suar.me/l77wN/m" width="20px">
+                                          Enter your email</h6></a>
+                               </div>
+                         </div>
+                   </div>
+                   <div style="text-align: center;">
+                         <p>Designed & Developed By DIGITIX Agency.</p>
+                         <p>© 2023 Ritzy Scarves | All Rights Reserved.</p>
+                         <img src="https://cdn.shopify.com/s/files/1/0818/5118/7492/files/visa_logo.png?v=1694263673"
+                               width="40px">
+                         <img src="https://cdn.shopify.com/s/files/1/0818/5118/7492/files/master_card_logo.png?v=1694263674"
+                               width="40px">
+                         <img src="https://cdn.shopify.com/s/files/1/0818/5118/7492/files/american_express_logo.png?v=1694263674"
+                               width="25px">
+                   </div>
+                   </div>
+                   </body></html>
+                               
